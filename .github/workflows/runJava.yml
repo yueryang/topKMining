@@ -1,0 +1,37 @@
+name: Run Java
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'TopKMining.java'
+      - 'databases/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'TopKMining.java'
+      - 'databases/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            TopKMining.java
+            databases/
+      
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+      
+      - name: Run the algorithm
+        run: |
+          cd "${{ github.workspace }}"
+          java TopKMining.java -d databases/ttfe.txt -k 10

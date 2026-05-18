@@ -1,26 +1,14 @@
 # topKMining
 
-This is the implementation of the TTFE algorithm. Some related literature articles and algorithms are also included. 
+This repository serves as a systematic collection of multiple top-$k$ mining algorithms. 
 
-## Literature
+## Algorithms
 
-The development of top-$k$ mining algorithms of the branch of the TTFE. 
+Most of the top-$k$ mining algorithms are implemented via the Java programming language. 
 
-## Datasets
+### SPMF
 
-Six famous datasets are included. 
-
-Example datasets used for algorithm debugging, testing, and tracking are proposed. 
-
-A Python script is written for 2D dataset generation. 
-
-## Codes
-
-The following are the codes of the top $k$ mining algorithms. 
-
-## SPMF
-
-A set of algorithms forked from the SPMF platform. 
+This a set of algorithms downloaded from the [SPMF](https://www.philippe-fournier-viger.com/spmf/index.php?link=download.php) platform. 
 
 ### THUI
 
@@ -83,3 +71,15 @@ More experimental options and file operations are provided.
 Extended experiments are merged. 
 
 **Data should be cut according to a fixed ratio if it is hard to test GUMM due to the limitation of computing memory.**
+
+## Datasets
+
+Six famous datasets are included. 
+
+Example datasets used for algorithm debugging, testing, and tracking are proposed. 
+
+A Python script is designed for 2D dataset generation. 
+
+## Literature
+
+Selected literature corresponding to different famous top-$k$ mining algorithms is collected here. 
